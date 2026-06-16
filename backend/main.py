@@ -1,6 +1,6 @@
-def main():
-    print("Hello from backend!")
+from fastapi import FastAPI
 
+from app.api.router import api_router
 
-if __name__ == "__main__":
-    main()
+app = FastAPI(title="ScatterPath API")
+app.include_router(api_router)
