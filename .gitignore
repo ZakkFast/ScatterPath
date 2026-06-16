@@ -13,6 +13,7 @@ backend/.pytest_cache/
 .env.local
 backend/.env
 frontend/.env
+private/
 
 # system
 .DS_Store
