@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: scatterpath
+      POSTGRES_USER: scatterpath
+      POSTGRES_PASSWORD: scatterpath
+    ports:
+      - "5432:5432"
+    volumes:
+      - scatterpath_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  scatterpath_postgres_data:
